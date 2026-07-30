@@ -1,45 +1,71 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Sobre mim</title>
-	<link rel="stylesheet" href="./styles/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça a trajetória de Mauro Júnior, engenheiro e desenvolvedor de produtos digitais.">
+    <meta name="theme-color" content="#0b1220">
+    <title>Sobre — Mauro Júnior</title>
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
-	<header class="cabecalho">
-		<nav class="cabecalho__menu">
-			<a class="cabecalho__menu__link" href="index.html">Home</a>
-			<a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
-		</nav>
-	</header>
-	<main class="apresentacao">
-		<section class="apresentacao__conteudo">
-			<h1 class="apresentacao__conteudo__titulo">Sobre mim</h1>
-			<p class="apresentacao__conteudo__texto">
-				At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-				voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
-				cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id
-				est laborum et dolorum fuga.
-			</p>
-			<p class="apresentacao__conteudo__texto">
-				Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta
-				nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere
-				possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem
-				quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates
-				repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente
-				delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis
-				doloribus asperiores ipsum delis forum birol parela maxime infena. Excepteur sint occaecat
-				cupidatat non.
-			</p>
-		</section>
-		<img src="./assets/imagem.jpg" alt="Foto de Perfil de Mauro Júnior">
-	</main>
-	<footer class="rodape">
-		<p>Desenvolvido por Mauro Júnior.</p>
-	</footer>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <header class="cabecalho">
+        <a class="marca" href="index.html" aria-label="Página inicial de Mauro Júnior"><span class="marca__simbolo">MJ</span><span>Mauro Júnior</span></a>
+        <nav class="cabecalho__menu cabecalho__menu--simples" aria-label="Navegação principal">
+            <a href="index.html">Início</a>
+            <a href="index.html#conectafree">ConectaFree</a>
+            <a class="menu__contato" href="https://www.linkedin.com/in/engmaurojunior/" target="_blank" rel="noreferrer">Vamos conversar</a>
+        </nav>
+    </header>
+
+    <main id="conteudo" class="pagina-sobre">
+        <section class="sobre-hero">
+            <div>
+                <p class="eyebrow"><span></span> Minha trajetória</p>
+                <h1>Curiosidade técnica, visão prática e vontade de construir.</h1>
+            </div>
+            <p>Sou Mauro Júnior, engenheiro e desenvolvedor. Migrei para tecnologia levando comigo uma forma estruturada de pensar: entender o contexto, reduzir a complexidade e entregar soluções úteis para pessoas reais.</p>
+        </section>
+
+        <section class="sobre-corpo">
+            <div class="sobre-foto"><img src="./assets/imagem.jpg" alt="Mauro Júnior em uma praça" width="467" height="539"><span>Brasil · Disponível para conexões</span></div>
+            <div class="sobre-copy">
+                <h2>Da engenharia ao desenvolvimento de produtos</h2>
+                <p>Encontrei no software um território onde lógica e criatividade trabalham juntas. Desde então, venho aprofundando minha prática em interfaces web e mobile, integração com APIs e experiências centradas no usuário.</p>
+                <p>Atualmente desenvolvo o <strong>ConectaFree</strong>, aplicativo que conecta clientes a profissionais locais. No projeto, atuo da definição dos fluxos à implementação do app e de sua estrutura de serviços.</p>
+                <p>Gosto de produtos diretos, texto claro, interfaces acessíveis e decisões técnicas que continuem fazendo sentido conforme o projeto cresce.</p>
+                <div class="sobre-lista">
+                    <div><span>Foco atual</span><strong>React, React Native e TypeScript</strong></div>
+                    <div><span>Interesses</span><strong>Produto, UX e arquitetura front-end</strong></div>
+                    <div><span>Em construção</span><strong>ConectaFree</strong></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="principios">
+            <p class="eyebrow"><span></span> Como eu trabalho</p>
+            <div class="principios__grid">
+                <article><span>01</span><h3>Contexto antes do código</h3><p>Entender a pessoa, o problema e o resultado esperado orienta decisões melhores.</p></article>
+                <article><span>02</span><h3>Clareza em cada camada</h3><p>Da interface à estrutura técnica, simplicidade torna o produto mais confiável.</p></article>
+                <article><span>03</span><h3>Evolução contínua</h3><p>Construir, observar, aprender e melhorar: produtos consistentes nascem em ciclos.</p></article>
+            </div>
+        </section>
+
+        <section class="contato contato--sobre">
+            <p class="eyebrow"><span></span> Próximo passo</p>
+            <h2>Quer conversar sobre produto ou tecnologia?</h2>
+            <a class="botao botao--claro" href="https://www.linkedin.com/in/engmaurojunior/" target="_blank" rel="noreferrer">Entre em contato <span aria-hidden="true">↗</span></a>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div><span class="marca__simbolo">MJ</span><p>Produtos digitais com intenção.</p></div>
+        <div class="rodape__links"><a href="https://github.com/Mauro-Fonseca" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/engmaurojunior/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
+        <p>© 2026 Mauro Júnior</p>
+    </footer>
 </body>
 
 </html>

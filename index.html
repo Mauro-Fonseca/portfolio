@@ -1,49 +1,158 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Portifólio</title>
-	<link rel="stylesheet" href="./styles/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Mauro Júnior, desenvolvedor de produtos digitais e criador do ConectaFree.">
+    <meta name="theme-color" content="#0b1220">
+    <title>Mauro Júnior — Desenvolvedor de produtos digitais</title>
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
-	<header class="cabecalho">
-		<nav class="cabecalho__menu">
-			<a class="cabecalho__menu__link" href="index.html">Home</a>
-			<a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
-		</nav>
-	</header>
-	<main class="apresentacao">
-		<section class="apresentacao__conteudo">
-			<h1 class="apresentacao__conteudo__titulo">
-				Eleve seu negócio digital a outro nível
-				<strong class="titulo-destaque">com um Front-end de qualidade!</strong>
-			</h1>
-			<p class="apresentacao__conteudo__texto">
-				Olá! Sou Mauro Júnior, desenvolvedor Front-end com especialidade em React, HTML e CSS.
-				Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos conversar?
-			</p>
-			<div class="apresentacao__links">
-				<h2 class="apresentacao__links__subtitulo">Acesse minhas redes:</h2>
-				<a class="apresentacao__links__navegacao" href="https://github.com/Mauro-Fonseca">
-					<img src="./assets/github.png">
-					GitHub</a>
-				<a class="apresentacao__links__navegacao" href="https://www.linkedin.com/in/engmaurojunior/">
-					<img src="./assets/linkedin.png">
-					Linkedin</a>
-				<a class="apresentacao__links__navegacao" href="https://www.instagram.com/mauro_junior25/">
-					<img src="./assets/instagram.png">
-					Instagram</a>
-			</div>
-		</section>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-		<img class="apresentacao__imagem" src="./assets/imagem.jpg" alt="Foto de Perfil de Mauro Júnior" />
-	</main>
-	<footer class="rodape">
-		<p>Desenvolvido por Mauro Júnior.</p>
-	</footer>
+    <header class="cabecalho">
+        <a class="marca" href="index.html" aria-label="Página inicial de Mauro Júnior">
+            <span class="marca__simbolo">MJ</span>
+            <span>Mauro Júnior</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
+            <span></span><span></span>
+            <span class="sr-only">Abrir menu</span>
+        </button>
+        <nav class="cabecalho__menu" id="menu-principal" aria-label="Navegação principal">
+            <a href="#inicio">Início</a>
+            <a href="#conectafree">ConectaFree</a>
+            <a href="#sobre">Sobre</a>
+            <a class="menu__contato" href="https://www.linkedin.com/in/engmaurojunior/" target="_blank" rel="noreferrer">Vamos conversar</a>
+        </nav>
+    </header>
+
+    <main id="conteudo">
+        <section class="hero" id="inicio">
+            <div class="hero__conteudo">
+                <p class="eyebrow"><span></span> Desenvolvedor front-end &amp; mobile</p>
+                <h1>Transformo problemas reais em <em>produtos digitais simples.</em></h1>
+                <p class="hero__texto">Sou Mauro Júnior. Projeto e desenvolvo experiências digitais com foco em clareza, usabilidade e código sustentável — do primeiro fluxo à entrega do produto.</p>
+                <div class="hero__acoes">
+                    <a class="botao botao--primario" href="#conectafree">Conheça meu trabalho <span aria-hidden="true">↘</span></a>
+                    <a class="botao botao--texto" href="about.html">Mais sobre mim <span aria-hidden="true">→</span></a>
+                </div>
+                <ul class="hero__stack" aria-label="Tecnologias principais">
+                    <li>React</li>
+                    <li>React Native</li>
+                    <li>TypeScript</li>
+                    <li>Node.js</li>
+                </ul>
+            </div>
+
+            <div class="hero__visual" aria-label="Retrato de Mauro Júnior">
+                <div class="hero__orb"></div>
+                <img src="./assets/imagem.jpg" alt="Mauro Júnior sentado em uma praça" width="467" height="539">
+                <div class="status-card">
+                    <span class="status-card__dot"></span>
+                    <span><strong>Construindo agora</strong>ConectaFree</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="produto" id="conectafree">
+            <div class="section-heading">
+                <p class="eyebrow"><span></span> Produto em desenvolvimento</p>
+                <h2>ConectaFree</h2>
+                <p>Uma experiência mobile que aproxima quem precisa de um serviço de profissionais disponíveis na região.</p>
+            </div>
+
+            <div class="produto__grid">
+                <article class="case-card">
+                    <div class="case-card__topo">
+                        <div class="app-brand"><span>CF</span><strong>ConectaFree</strong></div>
+                        <span class="tag">Mobile app</span>
+                    </div>
+                    <h3>Serviços locais, conexões mais simples.</h3>
+                    <p>O projeto reúne descoberta de profissionais, propostas, negociação, acompanhamento do serviço, chat e avaliações em uma jornada integrada.</p>
+                    <div class="case-card__detalhes">
+                        <div><span>Papel</span><strong>Produto &amp; desenvolvimento</strong></div>
+                        <div><span>Plataforma</span><strong>iOS &amp; Android</strong></div>
+                        <div><span>Status</span><strong>Em desenvolvimento</strong></div>
+                    </div>
+                    <a class="case-link" href="https://github.com/Mauro-Fonseca" target="_blank" rel="noreferrer">Acompanhar evolução no GitHub <span aria-hidden="true">↗</span></a>
+                </article>
+
+                <div class="phone-stage" aria-label="Prévia conceitual da interface do ConectaFree">
+                    <div class="phone">
+                        <div class="phone__notch"></div>
+                        <div class="phone__screen">
+                            <div class="phone__header"><span>Olá, Mauro</span><span class="avatar-mini">MJ</span></div>
+                            <p>Qual serviço você precisa?</p>
+                            <div class="search">⌕&nbsp;&nbsp; Buscar serviços</div>
+                            <div class="phone__label"><strong>Categorias</strong><span>Ver todas</span></div>
+                            <div class="categories">
+                                <span>⌂<small>Reparos</small></span>
+                                <span>✦<small>Limpeza</small></span>
+                                <span>◫<small>Elétrica</small></span>
+                            </div>
+                            <div class="phone__label"><strong>Profissionais perto</strong><span>2,4 km</span></div>
+                            <div class="pro-card"><span class="pro-avatar">RA</span><span><strong>Rafael Alves</strong><small>Manutenção residencial</small><b>★ 4,9</b></span></div>
+                            <div class="pro-card"><span class="pro-avatar pro-avatar--alt">CS</span><span><strong>Carla Souza</strong><small>Limpeza profissional</small><b>★ 4,8</b></span></div>
+                        </div>
+                    </div>
+                    <span class="floating-note floating-note--one">Perfis avaliados <b>✓</b></span>
+                    <span class="floating-note floating-note--two">Chat direto <b>•••</b></span>
+                </div>
+            </div>
+
+            <div class="produto__pilares">
+                <article><span>01</span><h3>Dois perfis, uma conta</h3><p>O usuário alterna entre contratar e oferecer serviços sem perder seus dados.</p></article>
+                <article><span>02</span><h3>Jornada completa</h3><p>Solicitação, contraproposta, pagamento e acompanhamento reunidos no app.</p></article>
+                <article><span>03</span><h3>Confiança local</h3><p>Portfólio, avaliações e conversa direta ajudam a contratar com mais contexto.</p></article>
+            </div>
+        </section>
+
+        <section class="sobre-resumo" id="sobre">
+            <div>
+                <p class="eyebrow"><span></span> Sobre mim</p>
+                <h2>Engenharia com olhar para o produto.</h2>
+            </div>
+            <div class="sobre-resumo__texto">
+                <p>Minha experiência em engenharia me ensinou a decompor problemas complexos, tomar decisões com método e construir soluções que funcionam no mundo real. Hoje aplico esse repertório ao desenvolvimento de software.</p>
+                <a class="botao botao--texto" href="about.html">Conheça minha trajetória <span aria-hidden="true">→</span></a>
+            </div>
+        </section>
+
+        <section class="contato" id="contato">
+            <p class="eyebrow"><span></span> Tem uma ideia?</p>
+            <h2>Vamos construir algo que faça sentido.</h2>
+            <a class="botao botao--claro" href="https://www.linkedin.com/in/engmaurojunior/" target="_blank" rel="noreferrer">Iniciar uma conversa <span aria-hidden="true">↗</span></a>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div><span class="marca__simbolo">MJ</span><p>Produtos digitais com intenção.</p></div>
+        <div class="rodape__links">
+            <a href="https://github.com/Mauro-Fonseca" target="_blank" rel="noreferrer">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/engmaurojunior/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+            <a href="https://www.instagram.com/mauro_junior25/" target="_blank" rel="noreferrer">Instagram ↗</a>
+        </div>
+        <p>© <span id="ano"></span> Mauro Júnior</p>
+    </footer>
+
+    <script>
+        const toggle = document.querySelector('.menu-toggle');
+        const menu = document.querySelector('.cabecalho__menu');
+        toggle.addEventListener('click', () => {
+            const aberto = toggle.getAttribute('aria-expanded') === 'true';
+            toggle.setAttribute('aria-expanded', String(!aberto));
+            menu.classList.toggle('is-open');
+        });
+        menu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+            menu.classList.remove('is-open');
+            toggle.setAttribute('aria-expanded', 'false');
+        }));
+        document.querySelector('#ano').textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>
