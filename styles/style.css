@@ -136,6 +136,16 @@ button { font: inherit; }
 .sobre-lista { margin-top: 50px; border-top: 1px solid var(--line); }
 .sobre-lista div { padding: 20px 0; border-bottom: 1px solid var(--line); display: grid; grid-template-columns: .45fr 1fr; gap: 20px; font-size: .84rem; }
 .sobre-lista span { color: var(--ink-soft); }
+.trajetoria { padding: 105px 0; display: grid; grid-template-columns: .7fr 1.3fr; gap: clamp(60px, 9vw, 130px); border-top: 1px solid var(--line); }
+.trajetoria__intro { position: sticky; top: 40px; align-self: start; }
+.trajetoria__intro h2 { margin: 0; max-width: 430px; font: 500 clamp(2.3rem, 4vw, 3.8rem)/1.05 'Manrope', sans-serif; letter-spacing: -.06em; }
+.trajetoria__conteudo { border-top: 1px solid var(--line); }
+.trajetoria__item { display: grid; grid-template-columns: .58fr 1fr; gap: 36px; padding: 34px 0; border-bottom: 1px solid var(--line); }
+.trajetoria__item > div:first-child { display: grid; align-content: start; gap: 8px; }
+.trajetoria__item span { color: var(--ink-soft); font-size: .74rem; text-transform: uppercase; letter-spacing: .08em; }
+.trajetoria__item strong { font: 700 .9rem 'Manrope', sans-serif; }
+.trajetoria__item h3 { margin: 0 0 10px; font: 600 1.12rem 'Manrope', sans-serif; }
+.trajetoria__item p { margin: 0; color: var(--ink-soft); line-height: 1.7; font-size: .94rem; }
 .principios { margin-bottom: 100px; padding: 80px; background: var(--ink); color: var(--white); border-radius: var(--radius); }
 .principios .eyebrow { color: rgba(255,255,255,.6); }
 .principios__grid { margin-top: 50px; }
@@ -154,9 +164,10 @@ button { font: inherit; }
     .section-heading .eyebrow { margin-bottom: 0; }
     .produto__grid { grid-template-columns: 1fr; }
     .case-card { min-height: 610px; }
-    .sobre-resumo, .sobre-hero, .sobre-corpo { grid-template-columns: 1fr; gap: 50px; }
+    .sobre-resumo, .sobre-hero, .sobre-corpo, .trajetoria { grid-template-columns: 1fr; gap: 50px; }
     .sobre-hero { padding-top: 80px; }
     .sobre-corpo { grid-template-columns: minmax(250px, .75fr) 1fr; }
+    .trajetoria__intro { position: static; }
     .produto__pilares, .principios__grid { grid-template-columns: 1fr; }
     .produto__pilares article + article, .principios article + article { border-left: 0; border-top: 1px solid rgba(255,255,255,.13); padding-left: 0; margin-top: 32px; }
     .principios { padding: 50px 35px; }
@@ -185,6 +196,8 @@ button { font: inherit; }
     .contato { padding-top: 80px; padding-bottom: 80px; }
     .sobre-hero { padding: 72px 0; }
     .sobre-corpo { grid-template-columns: 1fr; padding: 70px 0 90px; }
+    .trajetoria { padding: 75px 0; }
+    .trajetoria__item { grid-template-columns: 1fr; gap: 18px; }
     .sobre-lista div { grid-template-columns: 1fr; gap: 7px; }
     .principios { margin-bottom: 70px; padding: 42px 24px; }
     .contato--sobre { margin-left: calc((100% - 100vw) / 2); }
